@@ -1,0 +1,963 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: #F7F7F7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    ul{
+        list-style: none;
+    }
+
+    #wrap {
+        position: relative;
+        width: 100vw;
+        height: 200vw;
+        overflow-x: hidden;
+    }
+
+    /* p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    } */
+
+    .lap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+
+    header li{
+        list-style-type: none;
+    }
+
+
+    .head-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #B650F0;
+        padding: 0.16vw;
+    }
+
+    .head-top p {
+        position: relative;
+        right: 44.2vw;
+        top: 0.2vw;
+        font-size: 2vw;
+        color: #FCFF55;
+    }
+
+    .head-top img {
+        width: 5vw;
+        position: relative;
+        left: 1.7vw;
+        top: 0.2vw;
+    }
+
+    .head-middle {
+        background-color: #ededed;
+        height: 3.4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0vw 0.1vw 0.4vw rgba(30, 30, 30, 0.168);
+    }
+
+    .head-middle .button {
+        display: flex;
+        position: relative;
+        right: 30.73vw;
+    }
+
+    .head-middle .button-red {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FE5F58;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-yellow {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FEBC30;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-green {
+        width: 1vw;
+        height: 1vw;
+        background-color: #29C840;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle p {
+        font-size: 1.3vw;
+        color: #4C4C4C;
+        border: 0.15vw solid #c3c3c3b4;
+        border-radius: 0.6vw;
+        width: 30vw;
+        height: 2.6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.4vw 8vw 0.4vw 8vw; */
+        /* 위  오  아 왼*/
+    }
+
+    .logo {
+        width: 14vw;
+        padding: 3vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .line {
+        border: 0.01vw solid #ffff;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.95vw;
+    }
+
+    /* 전체 헤더 컨테이너를 Flexbox로 설정 */
+    .main-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3vw;
+        position: relative;
+        left: 32vw;
+        bottom: 5.15vw;
+    }
+
+    .left-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+    .right-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+    }
+
+    .middle-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+
+    .left-group ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-group li {
+        margin-bottom: 0.3vw;
+        text-align: center;
+    }
+
+
+    .main-header a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 1vw;
+        padding-top: 1vw;
+        border-top: 0.26vw solid #ffff;
+        width: 100%;
+    }
+
+
+
+    .left-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+    .middle-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .right-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .left-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .middle-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .right-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        transform: rotate(15deg);
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .logo,
+    .line,
+    .main-header {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+
+    /* --- 새로 추가된 기능용 CSS --- */
+header {
+    position: fixed; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* --- [수정된 버전] 기능 구현 CSS --- */
+.logo, .line, .main-header {
+    opacity: 1;
+    transform: none;
+}
+
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+
+
+header.hide {
+    transform: translateY(-150%);
+}
+
+header.active {
+    background-color: #da9dfd58; 
+    backdrop-filter: blur(0.4vw); /* 👈 블러 효과 추가 (픽셀값 조절 가능) */
+    -webkit-backdrop-filter: blur(0.4vw); /* 👈 사파리 브라우저 호환용 */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+/* --- [추가] 메뉴 열렸을 때 내부 요소 색상 변경 --- */
+
+
+header.active .main-header a {
+    color: #fff;     
+    border-top-color: #fff ; /* 메뉴 위 얇은 선도 보라색으로 */
+    transition: color 0.5s, border-color 0.5s; /* 색깔 부드럽게 바뀌게 */
+}
+
+
+header.active .line {
+    border-color: #fff;
+    transition: border-color 0.5s;
+}
+
+/* 3. 작은 장식 선들 (.line-1) 배경색 변경 */
+header.active .line-1 {
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+
+
+
+.friends-container {
+        display: flex;
+        align-items: center;
+        align-items: flex-end;
+        height: 4vw;
+        width: 9vw;
+        margin-bottom: 5vw;
+        position: relative;
+        left: 4vw;
+        top: 2vw;
+    }
+
+
+    .letter {
+        height: auto;
+        margin: 0 0.1vw;
+        animation: bounce 1.6s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        30% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-1.3vw);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+    }
+
+    .letter:nth-child(1) {
+        animation-delay: 0s;
+        width: 1vw;
+    }
+
+    /* F */
+    .letter:nth-child(2) {
+        animation-delay: 0.1s;
+        width: 0.8vw;
+    }
+
+    /* r */
+    .letter:nth-child(3) {
+        animation-delay: 0.2s;
+        width: 0.58vw;
+    }
+
+    /* i */
+    .letter:nth-child(4) {
+        animation-delay: 0.3s;
+        width: 1.09vw;
+    }
+
+    /* e */
+    .letter:nth-child(5) {
+        animation-delay: 0.4s;
+        width: 1.19vw;
+    }
+
+    /* n */
+    .letter:nth-child(6) {
+        animation-delay: 0.5s;
+        width: 1.2vw;
+    }
+
+    /* d */
+    .letter:nth-child(7) {
+        animation-delay: 0.6s;
+        width: 1.1vw;
+    }
+
+    /* s */
+    .letter:nth-child(8) {
+        animation-delay: 0.7s;
+        width: 0.7vw;
+    }
+
+
+
+.menu-trigger {
+    position: fixed;
+    top: 8.5vw;
+    right: 1vw;
+    z-index: 100;
+    font-size: 1.4vw;
+    font-weight: 300;
+    color: #fff;
+    padding: 0.6vw 1.5vw;
+    cursor: pointer;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+}
+
+/* 마우스 올리면 살짝 커지게 */
+.menu-trigger:hover {
+    font-size: 1.7vw;
+}
+
+/* 2. 헤더(메뉴들)는 처음부터 안 보이게 숨김 */
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+    /* 부드럽게 나타나는 효과 */
+    transition: all 0.5s ease-in-out;
+}
+
+header.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background-color: #da9dfd58;
+    backdrop-filter: blur(0.4vw);
+    -webkit-backdrop-filter: blur(0.4vw);
+}
+
+/* 메뉴 열렸을 때 글자색 보라색으로 (기존 스타일 유지) */
+header.active .main-header a { color: #fff; border-top-color: #fff; }
+header.active .line { border-color: #fff; }
+header.active .line-1 { background-color: #fff; }
+
+
+/* Back 버튼 스타일 */
+.back-btn {
+    position: fixed;
+    top: 8.5vw;    /* 메뉴 버튼과 같은 높이 */
+    left: 1vw;     /* 왼쪽 여백 */
+    z-index: 100;  /* 다른 요소보다 위에 오도록 */
+    font-size: 1.4vw;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    padding: 0.6vw 1.5vw;
+    transition: transform 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+.back-btn:hover {
+    transform: translateX(-0.5vw); /* 마우스 올리면 왼쪽으로 살짝 움직임 */
+}
+
+
+.monica{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/monica.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+
+.monica img{
+    width: 50vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 7vw;
+}
+
+.monica .content{
+    position: relative;
+    left: 60vw;
+    top: 12vw;
+    display: flex;
+}
+
+.monica a{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+.monica p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    font-weight: 300;
+    /* border: 1px solid red; */
+    line-height: 1.7vw;
+}
+
+
+.rachel{
+    width: 100vw;
+    height: 100vw;
+    background-image: url('./img/rachel.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.rachel img{
+    width: 50vw;
+    position: absolute;
+    bottom: 6.4vw;
+    left: 4vw;
+}
+
+.rachel .content{
+    position: absolute;
+    top: 17vw;
+    left: 25vw;
+    /* left: 30vw;
+    bottom: 14vw; */
+    display: flex;
+    /* border: 1px solid red; */
+}
+.rachel a{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+.rachel p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    font-weight: 300;
+}
+
+.phoebe{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/phoebe.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.phoebe img{
+    width: 50vw;
+    position: relative;
+    left: 4vw;
+    top: 5vw;
+}
+
+.phoebe a{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-right: 5vw;
+    /* border: 1px solid red; */
+}
+
+.phoebe p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    font-weight: 300;
+}
+
+.phoebe .content{
+    position: relative;
+    left: 17vw;
+    top: 10vw;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.ross{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/ross.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ross img{
+    width: 60vw;
+    position: absolute;
+    bottom: 6vw;
+    left: 3.4vw;
+}
+
+.ross .content{
+    display: flex;
+    position: absolute;
+    top: 12vw;
+    left: 8vw;
+    /* left: 6vw;
+    bottom: 14vw; */
+
+}
+
+.ross a{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+.ross p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    font-weight: 300;
+}
+
+.joey{
+    width: 100vw;
+    height: 100vw;
+    background-image: url('./img/joey.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.joey img{
+    width: 60vw;
+    position: absolute;
+    bottom: 5vw;
+    left: 4vw;
+}
+
+.joey .content{
+    display: flex;
+    position: absolute;
+    top: 25vw;
+    left: 43vw;
+}
+
+.joey a{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+.joey p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    font-weight: 300;
+}
+.chandler{
+    width: 100vw;
+    height: 100vw;
+    background-image: url('./img/chandler.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.chandler .content{
+    display: flex;
+    position: absolute;
+    top: 10vw;
+    right: 4vw;
+}
+
+.chandler img{
+    width: 43vw;
+    position: absolute;
+    bottom: 7vw;
+    right: 4vw;
+}
+.chandler p{
+    width: 20vw;
+    color: #FFF;
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+
+.chandler a{
+    color: #fff;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+/* --- 모바일 대응 (화면 너비가 768px 이하일 때) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. 배경 이미지를 모바일 전용(세로형)으로 교체 */
+    .monica {
+        background-image: url('./img/monica-m.png'); /* 모바일용 이미지 경로 */
+    }
+    .rachel {
+        background-image: url('./img/rachel-m.png');
+    }
+    .phoebe {
+        background-image: url('./img/phoebe-m.png');
+    }
+    .ross {
+        background-image: url('./img/ross-m.png');
+    }
+    .joey {
+        background-image: url('./img/joey-m.png');
+    }
+    .chandler {
+        background-image: url('./img/chandler-m.png');
+    }
+
+    /* 2. 혹시 이미지가 잘리더라도 '인물' 중심으로 보이게 위치 조정 */
+    .section {
+        background-position: center top; /* 위쪽(얼굴) 중심으로 정렬 */
+    }
+}
+
+
+/* --- [수정] 무한 스크롤 & 스냅용 CSS --- */
+
+
+
+body {
+    overflow: hidden; /* 핵심: 브라우저 스크롤바 안 생기게 */
+    background-color: #000; /* 빈 공간 안 보이게 검은색 처리 */
+}
+
+/* 2. 가로 컨테이너 */
+.horizontal-container {
+    display: flex;       /* 가로 배치 */
+    flex-wrap: nowrap;   /* 줄바꿈 금지 */
+    width: 100%;         /* JS로 제어할 거라 100%면 됨 */
+    height: 100vh;
+    will-change: transform; /* 애니메이션 성능 최적화 */
+}
+
+/* 3. 각 섹션 크기 */
+.section {
+    flex: 0 0 100vw;    /* 무조건 화면 너비 100% 차지 (찌그러짐 방지) */
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.grid-view-container {
+    position: fixed;
+    top: 6vw;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 6vw); 
+    z-index: 50;
+    pointer-events: auto; 
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #B650F0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-overflow-scrolling: touch;
+}
+
+.grid-content ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:self-end;
+    position: relative;
+    top: 20vw;
+    left: 20vw;
+    padding-bottom: 10vw;
+}
+
+.grid-content ul li img{
+    width: 18vw;
+}
+
+        .view-toggle-btn {
+            position: relative;
+            top: 9vw;
+            left: 85vw;
+            z-index: 300;
+            width: 2vw;
+            height: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .view-toggle-btn img{
+            width: 2vw;
+            height: 2vw;
+        }
+
+        .view-toggle-btn-2 {
+            position: relative;
+            top: 7.19vw;
+            left: 88vw;
+            z-index: 300;
+            width: 2vw;
+            height: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .view-toggle-btn-2 img{
+            width: 2vw;
+            height: 2vw;
+        }
+
+        /* 클릭 시 살짝 눌리는 효과 */
+        .view-toggle-btn:active,
+        .view-toggle-btn-2:active {
+            transform: scale(0.9);
+        }
+
+
+        .name-section{
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        .name-section img{
+            cursor: pointer;
+        }
+
+        .name-section img:hover{
+            transform: scale(0.9);
+        }
+
+        .name-section img:nth-child(1){
+            height: 20vw;
+            position: absolute;
+            top: 6vw;
+            left: -46vw;
+        }
+
+        .name-section img:nth-child(1):hover{
+            transform: scale(0.9);
+        }
+        
+        .name-section img:nth-child(2){
+            height: 30vw;
+            position: absolute;
+            top: 16vw;
+            left: -17vw;
+            /* right: 70vw; */
+        }
+
+        .name-section img:nth-child(3){
+            height: 35vw;
+            position: absolute;
+            top: 6vw;
+            /* right: 26vw; */
+            left: 0.5vw;
+        }
+
+        .name-section img:nth-child(4){
+            height: 39vw;
+            position: absolute;
+            top: 21.5vw;
+            left: 2.5vw;
+            /* right: 50vw; */
+        }
+
+        .name-section img:nth-child(5){
+            height: 43vw;
+            position: absolute;
+            top: 19vw;
+            left: -52vw;
+            /* right: 65vw; */
+        }
+
+        .name-section img:nth-child(6){
+            height: 59vw;
+            position: absolute;
+            top: 21.3vw;
+            left: -31vw;
+        }
+
+
+
+        /* 1. 평소(PC)에는 안 보이게 설정 */
+.mobile-bottom-content {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    .mobile-bottom-content {
+        display: flex;       /* 보이게 설정 (block이나 flex 등) */
+        justify-content: center;
+        align-items: center;
+        position: absolute;  /* 위치를 자유롭게 잡기 위해 */
+        bottom: 5vh;         /* 바닥에서 약간 위로 */
+        left: 0;
+        width: 100%;
+        height: 37vh;       
+        z-index: 10;
+    }
+
+    .mobile-bottom-content img{
+        width: 100%;
+    }
+    /* (선택사항) 기존 이름들이 너무 위에 몰려있으면 모바일에서만 조금 내리기 */
+    .name-section {
+        top: 10vh; 
+    }
+}
