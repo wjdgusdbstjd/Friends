@@ -247,13 +247,14 @@
         position: relative;
         top: 0.01vw;
         margin-bottom: 1vw;
+        transform: rotate(15deg);
     }
 
     .right-group ul .line-1{
         width: 3.4vw;
         height: 0.3vw;
         background-color: #fff;
-        transform: rotate(15deg);
+        
         position: relative;
         top: 0.01vw;
         margin-bottom: 1vw;
